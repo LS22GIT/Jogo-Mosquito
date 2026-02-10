@@ -223,12 +223,19 @@ button {
 
 /*Tela inicial(celular)*/
 @media screen and (max-width:600px)  {
+body{
+   width: 100%; 
+}
+.reiniciar{
+    margin-top: 100px;
+}
 .vitoria{
     width: 350px;
     height: 250px;
     border-radius: 10px;
     margin-bottom: 50px;
 }
+
 .vitoria p{
     font-size: 100px;
     
