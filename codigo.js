@@ -173,5 +173,34 @@ function dificuldade(){
     console.log("o nivel é " + nivel)
 }
 
+const cursor = document.getElementById("cursor");
+
+// Detectar dispositivo com toque
+const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+if (isTouch) {
+    // CELULAR/TABLET → esconder cursor customizado
+    cursor.style.display = "none";
+    document.body.style.cursor = "auto"; // volta o cursor normal
+} else {
+    // PC → ativar cursor personalizado
+    document.body.style.cursor = "none";
+
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.left = (e.clientX - cursor.offsetWidth / 2) + "px";
+        cursor.style.top = (e.clientY - cursor.offsetHeight / 2) + "px";
+    });
+
+    // Inclinar ao clicar
+    document.addEventListener("mousedown", () => {
+        cursor.style.transform += " rotate(15deg)";
+    });
+
+    document.addEventListener("mouseup", () => {
+        cursor.style.transform = cursor.style.transform.replace(" rotate(15deg)", "");
+    });
+}
+
+
 
 
