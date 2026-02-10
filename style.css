@@ -187,6 +187,8 @@ button {
     justify-content: center;
     align-items: center;
     box-shadow: 3px 4px 7px black;
+    text-shadow: 2px 2px 4px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .perdeu p, .vitoria p {
@@ -228,6 +230,8 @@ button {
         width: 85%;
         height: 260px;
         border-radius: 15px;
+        text-shadow: 2px 2px 4px black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .perdeu p, .vitoria p {
