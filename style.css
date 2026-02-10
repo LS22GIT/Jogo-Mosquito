@@ -186,7 +186,6 @@ button {
     font-size: 40px;
     text-shadow: 2px 2px 4px black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
 }
 .reiniciar:hover{
     height: 85px;
@@ -227,7 +226,7 @@ body{
    width: 100%; 
 }
 .reiniciar{
-    margin-top: 100px;
+    top: 60%;
 }
 .vitoria{
     width: 350px;
