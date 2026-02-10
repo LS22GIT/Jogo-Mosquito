@@ -179,11 +179,12 @@ const cursor = document.getElementById("cursor");
 const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
 if (isTouch) {
-    // CELULAR/TABLET → esconder cursor customizado
+    // CELULAR → sem cursor customizado
     cursor.style.display = "none";
-    document.body.style.cursor = "auto"; // volta o cursor normal
+    document.body.style.cursor = "auto";
+
 } else {
-    // PC → ativar cursor personalizado
+    // PC → cursor customizado
     document.body.style.cursor = "none";
 
     document.addEventListener("mousemove", (e) => {
@@ -191,13 +192,12 @@ if (isTouch) {
         cursor.style.top = (e.clientY - cursor.offsetHeight / 2) + "px";
     });
 
-    // Inclinar ao clicar
     document.addEventListener("mousedown", () => {
-        cursor.style.transform += " rotate(15deg)";
+        cursor.style.transform = "rotate(20deg)";
     });
 
     document.addEventListener("mouseup", () => {
-        cursor.style.transform = cursor.style.transform.replace(" rotate(15deg)", "");
+        cursor.style.transform = "rotate(0deg)";
     });
 }
 

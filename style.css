@@ -9,14 +9,14 @@
     height: auto;
     pointer-events: none;
     transform-origin: center;
-    transition: transform 0.1s linear;
+    transition: transform 0.8s;
+}
+@media (min-width: 601px) {
+    body {
+        cursor: none;
+    }
 }
 
-
-
-    html {
-    cursor: url(imagens/mata_mosca.png) 30 30, auto;
-}
 *{
     padding: 0px;
     margin: 0px;
