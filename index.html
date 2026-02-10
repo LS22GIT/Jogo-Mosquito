@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tela inicial</title>
+</head>
+<body onresize="ajustaTamanho()">
+    <img class="mosca1" src="imagens/mosca.png" alt="">
+    <img class="mosca2" src="imagens/mosca.png" alt="">
+    <img class="mosca3" src="imagens/mosca.png" alt="">
+    <img id="raquete" src="imagens/mata_mosca.png" alt="">
+    <div id="titulo">
+        <p>Mata <br> mosquito</p>
+    </div>
+    <div id="selecione">
+        <select name="nivel" id="nivel" onchange="mudarCor()">
+            <option value="0" selected>Escolha o nível</option>
+            <option value="2000">Fácil</option>
+            <option value="1500">Médio</option>
+            <option value="1000">Davi brito</option>
+        </select>
+        <button onclick="redirecionar()" id="inicio">Iniciar jogo</button>
+    </div>
+
+    <script src="codigo.js"></script>
+
+    
+</body>
+</html>

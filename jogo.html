@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="codigo.js"></script>
+</head>
+<body onresize="ajustaTamanho()" style="display: flex;">
+
+    <audio id="audio" loop muted>
+    <source src="Sons/você-está-no-canal-simpson-gamer-made-with-Voicemod.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="btnSom" style="font-size: 30px; cursor: pointer;">
+        🔊
+    </button>
+    
+    
+       <div id="barra">
+        <div class="vidas">
+        <span id="vida1" class="cheio"></span>
+        <span id="vida2" class="cheio"></span>
+        <span id="vida3" class="cheio"></span>
+        </div>
+        <div class="cronometro">
+            Tempo restante: <span id="cronometro"></span>
+        </div>
+
+        <p></p>
+        
+       </div>
+    
+    <script>
+        document.getElementById("cronometro").innerHTML = tempo
+
+        setInterval(posicaoRandomica,select)
+        posicaoRandomica()
+        tocaAutomatico()
+        tocaAudio()
+        setInterval(cronometro,1000);
+
+        
+
+        
+        
+    </script>
+</body>
+</html>
