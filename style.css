@@ -9,11 +9,12 @@
     height: auto;
     pointer-events: none;
     transform-origin: center;
-    transition: transform 0.8s;
+    transition: transform 0.2s;
+    z-index: 9999;
 }
 @media (min-width: 601px) {
-    body {
-        cursor: none;
+    html {
+        cursor: url(imagens/mata_mosca.png) 30 30, auto;
     }
 }
 
@@ -189,7 +190,9 @@ button {
     box-shadow: 3px 4px 7px black;
     text-shadow: 2px 2px 4px black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
     color: white;
+    text-align: center;
 }
 
 .perdeu p, .vitoria p {

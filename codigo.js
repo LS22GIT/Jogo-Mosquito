@@ -194,11 +194,11 @@ if (isTouch) {
     });
 
     document.addEventListener("mousedown", () => {
-        cursor.style.transform = "rotate(20deg)";
+        cursor.style.transform = "rotate(0deg)";
     });
 
     document.addEventListener("mouseup", () => {
-        cursor.style.transform = "rotate(0deg)";
+        cursor.style.transform = "rotate(40deg)";
     });
 }
 
