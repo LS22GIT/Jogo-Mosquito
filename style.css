@@ -5,9 +5,13 @@
 }
 
 /*Cursor*/
-html {
+@media screen and (min-width:600px) {
+    html {
     cursor: url(imagens/mata_mosca.png) 30 30, auto;
 }
+    
+}
+
 
 *{
     padding: 0px;
