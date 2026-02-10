@@ -151,69 +151,46 @@ button {
 
 /*TELA DE DERROTA*/
 
-.perdeu{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: #aaa9a9;
-    width: 400px;
-    height: 300px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 2px 3px 5px;
-}
-
 .vermelho{
     background: darkred;
 }
-.perdeu p{
-    align-self: center;
-    font-size: 120px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(236, 235, 235);
-    text-shadow: 2px 2px 4px black;
-}
-.reiniciar{
-    position: relative;
-    top: 38%;
+
+.reiniciar {
+    position: absolute;
+    top: calc(50% + 230px);
     left: 50%;
-    transform: translate(-50%, 0px);
+    transform: translateX(-50%);
+    width: 250px;
     height: 80px;
-    width: 200px;
+    font-size: 35px;
+    border-radius: 15px;
     font-size: 40px;
     text-shadow: 2px 2px 4px black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .reiniciar:hover{
     height: 85px;
-    width: 210px;
+    width: 260px;
     font-size: 45px;
     background-color: rgb(163, 163, 163);
 }
 
-.vitoria{
-    position: relative;
+.perdeu, .vitoria {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    background: darkgreen;
-    width: 600px;
-    height: 400px;
-    border-radius: 50px;
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
-    box-shadow: 2px 3px 5px;
+    align-items: center;
+    box-shadow: 3px 4px 7px black;
 }
-.vitoria p{
-    align-self: center;
-    font-size: 150px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(236, 235, 235);
-    text-shadow: 2px 2px 4px black;
+
+.perdeu p, .vitoria p {
+    font-size: 120px;
 }
 
 .verde{
@@ -221,57 +198,46 @@ button {
 }
 
 /*Tela inicial(celular)*/
-@media screen and (max-width:600px)  {
-body{
-   width: 100%; 
-}
-.reiniciar{
-    top: 60%;
-}
-.vitoria{
-    width: 350px;
-    height: 250px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
+@media screen and (max-width: 600px) {
 
-.vitoria p{
-    font-size: 100px;
-    
-}
-.perdeu{
-    width: 350px;
-    height: 250px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
-.perdeu p{
-    font-size: 100px;
-    
-}
-.mosca1{
-    width: 75px;
-    position: absolute;
-    top: 50%;
-    left: 80%;
-}
-.mosca2{
-    width: 100px;
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    transform: scalex(-1);
-    
-}
-.mosca3{
-    width: 150px;
-    position: absolute;
-    top: 100px;
-    left: 20%;
-}
+    body {
+        overflow: hidden;
+    }
 
+    /* TELA DO JOGO */
+    #barra {
+        width: 90%;
+        height: 60px;
+        padding: 5px;
+        margin: 0 auto;
+    }
 
+    .vidas span {
+        width: 28px;
+        height: 26px;
+        background-size: contain;
+    }
 
+    /* MOSQUITOS */
+    .mosca1 { width: 60px; }
+    .mosca2 { width: 80px; }
+    .mosca3 { width: 100px; }
 
-    
-} 
+    /* TELA DE PERDEU E VITÓRIA */
+    .perdeu, .vitoria {
+        width: 85%;
+        height: 260px;
+        border-radius: 15px;
+    }
+
+    .perdeu p, .vitoria p {
+        font-size: 60px;
+    }
+
+    .reiniciar {
+        width: 180px;
+        height: 65px;
+        top: calc(50% + 150px);
+        font-size: 28px;
+    }
+}
