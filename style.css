@@ -189,6 +189,7 @@ button {
     box-shadow: 3px 4px 7px black;
     text-shadow: 2px 2px 4px black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
 }
 
 .perdeu p, .vitoria p {
