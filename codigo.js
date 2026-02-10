@@ -26,7 +26,8 @@ function redirecionar(){
     console.log(select.value)
     if (nivel!=0){
         //ao colocar "?" no final do link + um parâmetro, esse parâmetro é salvo 
-        window.location.href="file:///C:/Users/Pichau/Documents/Curso-Web/JAVASCRIPT/Mata%20Mosquito/jogo.html?" + nivel
+        window.location.href = "jogo.html?" + nivel;
+
     } else {
         alert("Selecione um nível")
     }
@@ -47,10 +48,10 @@ function perdeVida(){
     }
 }
 function perdeu(){
-    window.location.href="file:///C:/Users/Pichau/Documents/Curso-Web/JAVASCRIPT/Mata%20Mosquito/perdeu.html"
+    window.location.href = "perdeu.html";
 }
 function reiniciar(){
-    window.location.href="file:///C:/Users/Pichau/Documents/Curso-Web/JAVASCRIPT/Mata%20Mosquito/index.html"
+    window.location.href = "index.html";
 }
 function posicaoRandomica(){
 
@@ -118,7 +119,7 @@ function cronometro(){
     tempo-=1
     document.getElementById("cronometro").innerHTML = tempo
     if (tempo==0){
-        window.location.href="file:///C:/Users/Pichau/Documents/Curso-Web/JAVASCRIPT/Mata%20Mosquito/venceu.html"
+        window.location.href = "venceu.html";
     }
     
         
