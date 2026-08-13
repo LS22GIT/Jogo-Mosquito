@@ -152,7 +152,7 @@ function tocaAutomatico(){
     // Toca mutado automaticamente (permitido)
     audio.play().catch(err => console.log(err));
 
-    // Quando o usuário interagir UMA vez, ativa o som
+    //ativa o som depois da primeira inteiração
     document.addEventListener("click", function ativarSom() {
         audio.muted = false;   // ativa o som
         audio.play();          // garante que está tocando
@@ -192,13 +192,13 @@ if (isTouch) {
         cursor.style.left = (e.clientX - cursor.offsetWidth / 2) + "px";
         cursor.style.top = (e.clientY - cursor.offsetHeight / 2) + "px";
     });
-
+//gira a raquete ao clicar
     document.addEventListener("mousedown", () => {
         cursor.style.transform = "rotate(0deg)";
     });
 
     document.addEventListener("mouseup", () => {
-        cursor.style.transform = "rotate(40deg)";
+        cursor.style.transform = "rotate(60deg)";
     });
 }
 
