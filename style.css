@@ -249,3 +249,8 @@ button {
         font-size: 28px;
     }
 }
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
